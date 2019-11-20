@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- 
+	https://github.com/moellerandi/p.github.io.git
+	
+	https://pages.github.com/
+	https://developers.google.com/web/tools/workbox/guides/get-started?hl=de
+	https://developers.google.com/web/fundamentals/codelabs/your-first-pwapp/?hl=de
+	https://developer.mozilla.org/de/docs/Web/API/Service_Worker_API/Using_Service_Workers
+
+ -->
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- <script src="dadacore.js"></script> -->
+	<title>PWA</title>
+	
+	<script>
+		// Check that service workers are supported
+		if ('serviceWorker' in navigator) {
+			// Use the window load event to keep the page load performant
+			window.addEventListener('load', () => { navigator.serviceWorker.register('/pwa/sw.js'); });
+		}
+
+</script>
+
+</head>
+
+<body>
+
+	Content of the document......
+
+</body>
+
+</html> 
